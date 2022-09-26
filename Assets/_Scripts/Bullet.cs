@@ -5,15 +5,30 @@ using UnityEngine.SceneManagement;
 
 public class Bullet : MonoBehaviour
 {
+
+    public int damage;
+
     private void OnCollisionEnter(Collision other) {
         Destroy(gameObject);
 
         if(other.collider.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        } else if(other.collider.tag == "Enemy")
+            
+                Vector3 dmgDirection = other.transform.position - transform.position;
+                dmgDirection = dmgDirection.normalized;
+
+                FindObjectOfType<PlayerHealth>().DamagePlayer(damage, dmgDirection);
+            
+
+        } 
+        else if(other.collider.tag == "Enemy")
         {
-            Destroy(other.gameObject);
+            Vector3 dmgDirection = other.transform.position - transform.position;
+            dmgDirection = dmgDirection.normalized;
+
+            FindObjectOfType<EnemyHealth>().DamagePlayer(damage, dmgDirection);
+
+
         }
     }
 }

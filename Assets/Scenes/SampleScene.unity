@@ -573,6 +573,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f7ba2089ac85d5d40bad5bcc574e769a, type: 3}
   m_PrefabInstance: {fileID: 2002739310}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &239277730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239277723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fcbb43a8a94e9349aa1a7b64839bcb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  health: 0
+  theEnemy: {fileID: 239277725}
 --- !u!1 &253064116 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: abff2d48221dda447af523dd49283f27, type: 3}
@@ -1583,6 +1598,21 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 3
   m_ObstacleAvoidanceType: 4
+--- !u!114 &715725115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715725107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fcbb43a8a94e9349aa1a7b64839bcb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  health: 0
+  theEnemy: {fileID: 715725113}
 --- !u!1 &737452326 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c42c28162faeeca4191e3fba3537b2dd, type: 3}
@@ -2933,6 +2963,21 @@ MonoBehaviour:
   playerCamera: {fileID: 963194227}
   projectile: {fileID: 2369002665294184600, guid: b4b6ea0ffc4dc954c855620565eb559a, type: 3}
   projectilePos: {fileID: 454112218}
+--- !u!114 &1094423466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094423460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8e59d50f740444b985cdb48b9219ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  health: 0
+  thePlayer: {fileID: 1094423465}
 --- !u!1 &1103108909
 GameObject:
   m_ObjectHideFlags: 0
@@ -3854,6 +3899,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.1813428, y: 1.6612531, z: 1.1987754}
   m_Center: {x: 0.046035636, y: 0.84837556, z: 0.09938835}
+--- !u!114 &1389563065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389563057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fcbb43a8a94e9349aa1a7b64839bcb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  health: 0
+  theEnemy: {fileID: 0}
 --- !u!1001 &1448634720
 PrefabInstance:
   m_ObjectHideFlags: 0
