@@ -26,7 +26,7 @@ public class Bullet : MonoBehaviour
             Vector3 dmgDirection = other.transform.position - transform.position;
             dmgDirection = dmgDirection.normalized;
 
-            FindObjectOfType<EnemyHealth>().DamagePlayer(damage, dmgDirection);
+            FindObjectOfType<EnemyHealth>().DamageEnemy(damage, dmgDirection);
 
 
         }

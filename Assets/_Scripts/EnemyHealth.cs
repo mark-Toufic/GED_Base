@@ -18,7 +18,7 @@ public class EnemyHealth : MonoBehaviour
     }
 
 
-    public void DamagePlayer(int damage, Vector3 direction)
+    public void DamageEnemy(int damage, Vector3 direction)
     {
         health -= damage;
 
